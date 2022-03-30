@@ -7,7 +7,7 @@ Created on Wed Mar 30 18:46:46 2022
 """
 
 import argparse
-from functions_and_stuff import *
+from .functions_and_stuff import *
 import time
 
 

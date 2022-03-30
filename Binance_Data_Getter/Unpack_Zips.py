@@ -6,7 +6,7 @@ Created on Wed Mar 30 18:40:23 2022
 @author: patrick
 """
 import argparse
-from functions_and_stuff import *
+from .functions_and_stuff import *
 
 
 
