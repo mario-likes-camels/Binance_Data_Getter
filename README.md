@@ -8,9 +8,13 @@ Used to extract and process data from Binance
 
 ## STEP1: Download the data you want
 This is done using the binance functions. 
-NOTE: you may wish to refer to https://github.com/binance/binance-public-data/tree/master/python
-To create custom candles you will need to use download-trade.py
+
+NOTE: you may wish to refer to https://github.com/binance/binance-public-data/tree/master/python 
+
+To create custom candles you will need to use download-trade.py 
+
 Otherwise - when we only use "Unpack_Zips.py" We can use download-kline.py, download-aggTrade.py. BUt we would only end up moving these files - we wouldn't do any of the merging - this will be done in a later update...maybe... :P 
+
 Example Usage: 
 
         python3 download-trade.py -s LTCBTC -startDate 2020-01-01 -endDate 2020-02-02 -folder '/home/Desktop/Coin_Data'
