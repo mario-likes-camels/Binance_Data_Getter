@@ -35,8 +35,3 @@ Example Usage:
 
 
 
-        python3 Create_Candles.py --base_folder '/home/Desktop/Coin_Data' --coin 'LTCBTC' --candle_size 25 --remove_temp_file True --remove_intermediate_files True
-        unzip='.zip'  #PATH TO ZIP FOLDER
-        destination=' '  #PATH YOU WON'T STUFF SAVED 
-        #Run the Function
-        fca.all_pre_processing(unzip,destination, delete=True, save=True)
