@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='Binance_Data_Getter',
-      version='0.1',
+      version='0.5',
       description='Used to extract and process data from Binance',
       url='https://github.com/mario-likes-camels/Binance_Data_Getter',
       author='Patrick',

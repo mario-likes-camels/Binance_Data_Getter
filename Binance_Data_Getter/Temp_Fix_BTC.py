@@ -97,6 +97,7 @@ def unpack_zips(base_folder, coin):
                 print (os.path.join(base_folder, file))
 
 
+unpack_zips(base_folder, coin)
 
 coin='BTCUSDT'
 base_folder='/home/patrick/Desktop/Crypto_Trading/DATA/TEST/Tick_Data/'
