@@ -12,17 +12,20 @@ NOTE: you may wish to refer to https://github.com/binance/binance-public-data/tr
 To create custom candles you will need to use download-trade.py
 Otherwise - when we only use "Unpack_Zips.py" We can use download-kline.py, download-aggTrade.py. BUt we would only end up moving these files - we wouldn't do any of the merging - this will be done in a later update...maybe... :P 
 Example Usage: 
+
         python3 download-trade.py -s LTCBTC -startDate 2020-01-01 -endDate 2020-02-02 -folder '/home/Desktop/Coin_Data'
 	
 
 ## STEP 2: Move the Zip files into the correct folder - and save as feathers
 Example Usage: 
+
         python3 Unpack_Zips.py --base_folder '/home/Desktop/Coin_Data' --coin 'LTCBTC'
 
 
 
 ## STEP 3: Create the candles that we want
 Example Usage: 
+
         python3 Create_Candles.py --base_folder '/home/Desktop/Coin_Data' --coin 'LTCBTC' --candle_size 25 --remove_temp_file True --remove_intermediate_files True
 
 
@@ -31,3 +34,9 @@ Example Usage:
 
 
 
+
+        python3 Create_Candles.py --base_folder '/home/Desktop/Coin_Data' --coin 'LTCBTC' --candle_size 25 --remove_temp_file True --remove_intermediate_files True
+        unzip='.zip'  #PATH TO ZIP FOLDER
+        destination=' '  #PATH YOU WON'T STUFF SAVED 
+        #Run the Function
+        fca.all_pre_processing(unzip,destination, delete=True, save=True)
